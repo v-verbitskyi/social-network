@@ -1,0 +1,11 @@
+@import "../../styles/themify.scss";
+
+.login {
+	font-weight: bold;
+	font-size: clamp(1rem, 2rem, 2.25rem);
+	@include themify("color", "primary-main");
+	&:hover {
+		@include themify("color", "primary-light");
+		cursor: pointer;
+	}
+}
